@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+ int dotProduct(int size){
+   int v1[size], v2[size], product, acum1=0;
+
+   for(int i=0; i<=(size-1); i++){
+     cout <<"Tell me the number in the position " <<i<< " of the Vector 1 "<< endl;
+     cin >> v1[i];
+
+     cout<<"Tell the number in th position " <<i<< " of the vector 2"<< endl;
+     cin >> v2[i];
+
+     product= v1[i]*v2[i];
+     cout<<endl;
+     acum1=acum1+product;
+   }
+
+   return acum1;
+ }
+
+ int main () {
+
+   int size;
+
+   cout<<"Tell me the size of the vectors "; cin >> size;
+
+   cout<<dotProduct(size);
+
+   return 0;
+ }
